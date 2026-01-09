@@ -1,57 +1,40 @@
 backend:
-  name: github
+  name: git-gateway
   branch: main
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
-site_url: https://hrpci.org
-
 collections:
-
-  - name: "homepage"
-    label: "Homepage Content"
+  - name: "pages"
+    label: "Website Pages"
     files:
       - label: "Home Page"
-        name: "home"
+        name: "index"
         file: "index.html"
         fields:
-          - { label: "Main Title", name: "title", widget: "string" }
-          - { label: "Subtitle", name: "subtitle", widget: "string" }
-          - { label: "About Section", name: "abouttext", widget: "text" }
+          - {label: "Content", name: "body", widget: "markdown"}
 
-  - name: "about"
-    label: "About Page"
-    files:
       - label: "About Page"
-        name: "aboutpage"
+        name: "about"
         file: "about.html"
         fields:
-          - { label: "Heading", name: "heading", widget: "string" }
-          - { label: "Description", name: "body", widget: "text" }
+          - {label: "Content", name: "body", widget: "markdown"}
 
-  - name: "awards"
-    label: "Awards Page"
-    files:
       - label: "Awards Page"
-        name: "awardspage"
+        name: "awards"
         file: "awards.html"
         fields:
-          - { label: "Awards Content", name: "awards_body", widget: "text" }
+          - {label: "Content", name: "body", widget: "markdown"}
 
-  - name: "gallery"
-    label: "Gallery"
-    folder: "gallery"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
+      - label: "Contact Page"
+        name: "contact"
+        file: "contact.html"
+        fields:
+          - {label: "Content", name: "body", widget: "markdown"}
 
-  - name: "events"
-    label: "Events"
-    folder: "events"
-    create: true
-    fields:
-      - { label: "Event Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Image", name: "image", widget: "image" }
+      - label: "Honorary Doctorate Page"
+        name: "honorary-doctorate"
+        file: "honorary-doctorate.html"
+        fields:
+          - {label: "Content", name: "body", widget: "markdown"}
