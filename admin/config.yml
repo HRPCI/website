@@ -1,0 +1,57 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://hrpci.org
+
+collections:
+
+  - name: "homepage"
+    label: "Homepage Content"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "index.html"
+        fields:
+          - { label: "Main Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "About Section", name: "abouttext", widget: "text" }
+
+  - name: "about"
+    label: "About Page"
+    files:
+      - label: "About Page"
+        name: "aboutpage"
+        file: "about.html"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "body", widget: "text" }
+
+  - name: "awards"
+    label: "Awards Page"
+    files:
+      - label: "Awards Page"
+        name: "awardspage"
+        file: "awards.html"
+        fields:
+          - { label: "Awards Content", name: "awards_body", widget: "text" }
+
+  - name: "gallery"
+    label: "Gallery"
+    folder: "gallery"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+
+  - name: "events"
+    label: "Events"
+    folder: "events"
+    create: true
+    fields:
+      - { label: "Event Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
