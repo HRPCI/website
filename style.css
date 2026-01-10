@@ -92,8 +92,8 @@ body {
 /* ===== HOMEPAGE SLIDESHOW ===== */
 .slideshow {
   position: relative;
-  width: 80%;
-  height: 30vh;
+  width: 90%;
+  height: 60vh;
   overflow: hidden;
 }
 
@@ -166,4 +166,5 @@ footer {
     height: 260px;
   }
 }
+
 
