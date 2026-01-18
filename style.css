@@ -89,8 +89,6 @@ body {
 .mobile-menu a:hover {
   color: #c62828;
 }
-
-
 /* ===== HOMEPAGE SLIDESHOW ===== */
 .slideshow {
   position: relative;
@@ -113,134 +111,58 @@ body {
 }
 
 
-/* ===== HEADER ===== */
-.header {
-  position: fixed;
-  top: 0;
+/* ================= HERO SLIDESHOW ================= */
+.hero {
+  margin-top: 90px;
+  height: 360px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
   width: 100%;
-  background: #fff;
-  border-bottom: 2px solid #c62828;
-  z-index: 999;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
+.slide.active {
+  opacity: 1;
 }
 
-/* LOGO */
-.logo img {
-  height: 45px;
-}
-
-/* DESKTOP MENU */
-.nav-links {
-  display: flex;
-  gap: 18px;
-  align-items: center;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 600;
-}
-
-/* PAY BUTTON */
-.pay-btn {
-  background: #c62828;
-  color: #fff !important;
-  padding: 8px 14px;
-  border-radius: 5px;
-}
-
-/* TOGGLE */
-.menu-toggle {
-  font-size: 26px;
-  cursor: pointer;
-  display: none;
-}
-
-/* MOBILE MENU */
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  background: #fff;
-}
-
-.mobile-menu a {
-  padding: 14px 20px;
-  border-bottom: 1px solid #eee;
-  text-decoration: none;
-  color: #000;
-}
-
-.mobile-menu.active {
-  display: flex;
-}
-
-/* CONTENT */
+/* ================= SECTIONS ================= */
 section {
-  padding: 120px 20px 60px;
+  padding: 80px 18px;
   max-width: 1100px;
   margin: auto;
 }
 
-h1, h2 {
-  color: #d32f2f;
+h1,
+h2 {
+  color: #c62828;
 }
 
-.hero {
-  background: #111;
-  color: #fff;
-  padding: 160px 20px 120px;
-}
-
-.hero h1 { color: #fff; }
-
+/* FOOTER */
 footer {
   background: #111;
-  color: #fff;
-  padding: 30px 20px;
+  color: white;
+  padding: 30px;
   text-align: center;
-  font-size: 14px;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
   .nav-links {
     display: none;
   }
+
   .menu-toggle {
     display: block;
   }
-}
 
-/* Mobile menu hidden */
-.nav-menu {
-  display: none;
+  .hero {
+    height: 260px;
+  }
 }
-
-/* When active */
-.nav-menu.active {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 70px;
-  right: 0;
-  width: 100%;
-  background: #fff;
-  z-index: 999;
-}
-
-/* Hamburger */
-.menu-toggle span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px;
-  background: #000;
-}
-
