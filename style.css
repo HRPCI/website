@@ -1,53 +1,93 @@
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
+/* BODY */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #ffffff;
-  color: #222;
+  color: #111;
 }
 
-/* HEADER */
-header {
+/* ================= HEADER ================= */
+.header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #fff;
-  border-bottom: 2px solid #d32f2f;
+  background: #ffffff;
+  border-bottom: 2px solid #c62828;
   z-index: 1000;
 }
 
-.header-inner {
+.nav-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 12px 20px;
+  align-items: center;
+  padding: 12px 16px;
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: #d32f2f;
+/* LOGO */
+.logo img {
+  height: 52px;
 }
 
-nav a {
+/* DESKTOP NAV */
+.nav-links a {
   margin: 0 12px;
   text-decoration: none;
-  color: #222;
   font-weight: 600;
+  color: #111;
 }
 
-nav a:hover {
-  color: #d32f2f;
+.nav-links a:hover {
+  color: #c62828;
 }
 
-.btn-red {
-  background: #d32f2f;
-  color: #fff;
-  padding: 10px 16px;
+/* PAY BUTTON */
+.pay-btn {
+  background: #c62828;
+  color: #fff !important;
+  padding: 8px 14px;
   border-radius: 6px;
+}
+
+/* MENU TOGGLE */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ================= MOBILE MENU ================= */
+.mobile-menu {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 270px;
+  height: 100%;
+  background: #fff;
+  padding: 22px;
+  transition: .3s;
+  box-shadow: -3px 0 10px rgba(0,0,0,.3);
+  z-index: 2000;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 12px 0;
   text-decoration: none;
+  font-size: 16px;
   font-weight: bold;
+  color: #111;
+}
+
+.mobile-menu a:hover {
+  color: #c62828;
 }
 
 
@@ -203,3 +243,4 @@ footer {
   margin: 5px;
   background: #000;
 }
+
