@@ -2,39 +2,38 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: https://hrpci.org
+display_url: https://hrpci.org
 
 collections:
   - name: "pages"
     label: "Website Pages"
+    folder: "/"
+    create: false
+    delete: false
+    format: "frontmatter"
+    extension: "html"
+    fields:
+      - { label: "Page Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  - name: "homepage"
+    label: "Homepage Sections"
     files:
-      - label: "Home Page"
-        name: "index"
+      - label: "Home Content"
+        name: "home"
         file: "index.html"
         fields:
-          - {label: "Content", name: "body", widget: "markdown"}
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Main Content", name: "body", widget: "markdown" }
 
-      - label: "About Page"
-        name: "about"
-        file: "about.html"
-        fields:
-          - {label: "Content", name: "body", widget: "markdown"}
-
-      - label: "Awards Page"
-        name: "awards"
-        file: "awards.html"
-        fields:
-          - {label: "Content", name: "body", widget: "markdown"}
-
-      - label: "Contact Page"
-        name: "contact"
-        file: "contact.html"
-        fields:
-          - {label: "Content", name: "body", widget: "markdown"}
-
-      - label: "Honorary Doctorate Page"
-        name: "honorary-doctorate"
-        file: "honorary-doctorate.html"
-        fields:
-          - {label: "Content", name: "body", widget: "markdown"}
+  - name: "images"
+    label: "Images"
+    folder: "assets/uploads"
+    create: true
+    delete: true
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
