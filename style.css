@@ -110,28 +110,6 @@ body {
   opacity: 1;
 }
 
-
-/* ================= HERO SLIDESHOW ================= */
-.hero {
-  margin-top: 90px;
-  height: 360px;
-  position: relative;
-  overflow: hidden;
-}
-
-.slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.slide.active {
-  opacity: 1;
-}
-
 /* ================= SECTIONS ================= */
 section {
   padding: 80px 18px;
@@ -166,3 +144,4 @@ footer {
     height: 260px;
   }
 }
+
