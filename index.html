@@ -181,6 +181,58 @@
   <img src="images/slide4.JPG" class="slide" alt="HRPCI Social Work">
 </div>
 
+<style>
+  .hrpci-cards-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+  }
+
+  .hrpci-card {
+    background-color: #c4161c; /* HRPCI red card */
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 420px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+
+  .hrpci-card:hover {
+    transform: translateY(-6px);
+  }
+
+  .hrpci-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  .hrpci-card p {
+    font-size: 15.5px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+
+  .read-more-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #ffffff;
+    color: #c4161c;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .read-more-btn:hover {
+    background-color: #ffdede;
+    color: #a11217;
+  }
+</style>
+
   <section class="hrpci-cards-section">
   <div class="hrpci-card">
     <h3>Our Mission</h3>
@@ -213,8 +265,7 @@
   <h3>Social Work</h3>
   <p>
     HRPCI actively supports and recognizes individuals and organizations engaged in social
-    work, humanitarian service, community development, and the upliftment of marginalized
-    sections of society, promoting justice, dignity, and equal opportunities for all.
+    work, humanitarian service, community development, and equal opportunities for all.
   </p>
   <a href="/contact.html" class="read-more-btn">Contact Us</a>
 </div>
@@ -381,6 +432,7 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
