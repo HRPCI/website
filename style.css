@@ -145,7 +145,7 @@ footer {
   }
 }
 
-.hrpci-cards-section {
+<section class="hrpci-cards-section"> {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -163,5 +163,6 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 
 
