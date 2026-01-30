@@ -157,7 +157,7 @@ footer {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
+  gap: 10px;
 }
 
 .footer-col h3 {
@@ -210,5 +210,6 @@ footer {
   font-size: 13px;
   color: #aaa;
 }
+
 
 
