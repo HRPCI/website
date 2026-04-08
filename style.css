@@ -209,7 +209,9 @@ footer {
   padding-top: 15px;
   font-size: 13px;
   color: #aaa;
+
 }
+
   .hrpci-cards-section {
     display: flex;
     gap: 20px;
@@ -222,8 +224,8 @@ footer {
     background-color: #c4161c; /* HRPCI red card */
     color: #ffffff;
     padding: 25px;
-    border-radius: 35px;
-    max-width: 300px;
+    border-radius: 25px;
+    max-width: 1200px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
   }
@@ -243,6 +245,7 @@ footer {
     line-height: 1.6;
     margin-bottom: 18px;
   }
+
 
   .read-more-btn {
     display: inline-block;
