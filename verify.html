@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Certificate Verification | HRPCI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Verify the authenticity of certificates, awards and honorary titles issued by Human Rights Protection Council, India (HRPCI).">
+<link rel="icon" href="images/hrpci-logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="images/hrpci-logo.png" alt="HRPCI Logo">
+      <span class="logo-text"><span class="full">Human Rights Protection Council, India</span><span class="sub">HRPCI &middot; SOCIAL ORGANIZATION</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="awards.html">Awards</a>
+      <a href="verify.html" class="active">Verify</a>
+      <a href="contact.html">Contact</a>
+      <a class="pay-btn" href="https://pages.razorpay.com/hrpci" target="_blank" rel="noopener">Pay Fees</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Close menu">✕</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="awards.html">Awards</a>
+  <a href="verify.html">Verify Certificate</a>
+  <a href="contact.html">Contact</a>
+  <a href="nomination.html">Nomination</a>
+  <a href="https://pages.razorpay.com/hrpci" class="pay-btn" target="_blank" rel="noopener">Pay Fees</a>
+</div>
+
+<div class="page-banner">
+  <span class="eyebrow">Official Verification</span>
+  <h1>Certificate Verification</h1>
+  <p class="sub">Enter the certificate number printed on your HRPCI award, honorary title or recognition certificate to confirm its authenticity.</p>
+</div>
+
+<section>
+  <div class="container verify-wrap">
+    <div class="verify-card reveal">
+      <label class="field-label" for="certInput" style="display:block; font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--navy); margin-bottom:8px;">Certificate Number</label>
+      <div class="input-row">
+        <input type="text" id="certInput" placeholder="e.g. HRPCI-HDA-00123" autocomplete="off">
+        <button id="verifyBtn">Verify</button>
+      </div>
+      <p class="hint">Certificate numbers are printed at the bottom of every HRPCI certificate. Entry is not case-sensitive.</p>
+      <div id="resultArea"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand"><img src="images/hrpci-logo.png" alt="HRPCI Logo"><span class="name">HRPCI</span></div>
+      <p>Human Rights Protection Council, India (HRPCI) is dedicated to promoting human rights, social justice, peace, education, and humanitarian values. We recognize individuals and institutions who contribute positively to society.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="honorary-doctorate.html">Honorary Doctorate</a></li>
+        <li><a href="verify.html">Verify Certificate</a></li>
+        <li><a href="policy.html">Policy</a></li>
+        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        <li><a href="refund.html">Refund Policy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Contact Info</h3>
+      <p><strong>Address:</strong><br>3rd Floor BMC Bhawani Mall,<br>Saheed Nagar, BBSR – 751007, Odisha</p>
+      <p><strong>Address:</strong><br>B1/638 A, 2nd Floor, Janakpuri,<br>New Delhi – 110058, India</p>
+      <p><strong>Phone:</strong> +91 7655086853<br><strong>Email:</strong> contact@hrpci.org</p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2025 Human Rights Protection Council, India (HRPCI). All Rights Reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+/* =====================================================================
+   CERTIFICATE DATABASE
+   To add a new certificate, copy a block below and fill in the details.
+   Keys must be UPPERCASE certificate numbers with no spaces.
+   ===================================================================== */
+  const CERTIFICATES = {
+    "HRPCI-HDA-122525": {
+      name: "Dr. AJAYA KUMAR DASH (H.C)",
+      award: "Honorary Doctorate Award",
+      category: "Music & Performing Arts",
+      event: "HRPCI Honorary Recognition Ceremony",
+      date: "05 July 2025",
+      place: "Mayfire Lagoon - Bhubaneswar, Odisha",
+      status: "Valid"
+    },
+    "HRPCI-2025-00124": {
+      name: "Smt. Anita Kumari Singh",
+      award: "Honorary Doctorate in Social Service",
+      category: "Education & Community Welfare",
+      event: "HRPCI Honorary Doctorate Convocation",
+      date: "18 April 2025",
+      place: "New Delhi",
+      status: "Valid"
+    }
+    // Add more certificate entries here.
+  };
+
+  const input = document.getElementById('certInput');
+  const btn = document.getElementById('verifyBtn');
+  const resultArea = document.getElementById('resultArea');
+
+  function renderValid(certNo, r){
+    resultArea.innerHTML = `
+      <div class="result-card valid">
+        <div class="status-row">
+          <div class="seal-icon ok">&#10003;</div>
+          <div class="status-text">
+            <div class="label">Verification Result</div>
+            <div class="value ok">Certificate Verified</div>
+          </div>
+        </div>
+        <div class="detail-grid">
+          <div class="detail-item wide"><div class="k">Certificate Number</div><div class="v">${certNo}</div></div>
+          <div class="detail-item"><div class="k">Awardee Name</div><div class="v">${r.name}</div></div>
+          <div class="detail-item"><div class="k">Award / Title</div><div class="v">${r.award}</div></div>
+          <div class="detail-item"><div class="k">Category</div><div class="v">${r.category}</div></div>
+          <div class="detail-item"><div class="k">Date Issued</div><div class="v">${r.date}</div></div>
+          <div class="detail-item"><div class="k">Event</div><div class="v">${r.event}</div></div>
+          <div class="detail-item"><div class="k">Place</div><div class="v">${r.place}</div></div>
+        </div>
+        <div class="disclaimer">This certificate was issued by Human Rights Protection Council, India (HRPCI) and is honorary in nature. Honorary Recognition Only — Not an Academic Degree.</div>
+      </div>`;
+  }
+
+  function renderInvalid(certNo){
+    resultArea.innerHTML = `
+      <div class="result-card invalid">
+        <div class="status-row">
+          <div class="seal-icon no">&#10005;</div>
+          <div class="status-text">
+            <div class="label">Verification Result</div>
+            <div class="value no">Certificate Not Found</div>
+          </div>
+        </div>
+        <div class="disclaimer">No certificate matching "<strong>${certNo}</strong>" was found in our records. Please check the number printed on your certificate and try again, or contact us at <a href="mailto:contact@hrpci.org">contact@hrpci.org</a> for assistance.</div>
+      </div>`;
+  }
+
+  function doVerify(){
+    const raw = input.value.trim().toUpperCase();
+    if(!raw){
+      resultArea.innerHTML = `<div class="result-card invalid"><div class="disclaimer">Please enter a certificate number to verify.</div></div>`;
+      return;
+    }
+    const record = CERTIFICATES[raw];
+    if(record){ renderValid(raw, record); } else { renderInvalid(raw); }
+  }
+
+  btn.addEventListener('click', doVerify);
+  input.addEventListener('keydown', function(e){ if(e.key === 'Enter') doVerify(); });
+</script>
+</body>
+</html>

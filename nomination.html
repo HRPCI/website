@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nomination Form | Human Rights Protection Council, India</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Submit a nomination for HRPCI membership, Honorary Doctorate, Lifetime Achievement or other honorary recognitions.">
+<link rel="icon" href="images/hrpci-logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="images/hrpci-logo.png" alt="HRPCI Logo">
+      <span class="logo-text"><span class="full">Human Rights Protection Council, India</span><span class="sub">HRPCI &middot; SOCIAL ORGANIZATION</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="awards.html">Awards</a>
+      <a href="verify.html">Verify</a>
+      <a href="contact.html">Contact</a>
+      <a class="pay-btn" href="https://pages.razorpay.com/hrpci" target="_blank" rel="noopener">Pay Fees</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Close menu">✕</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="awards.html">Awards</a>
+  <a href="verify.html">Verify Certificate</a>
+  <a href="contact.html">Contact</a>
+  <a href="nomination.html">Nomination</a>
+  <a href="https://pages.razorpay.com/hrpci" class="pay-btn" target="_blank" rel="noopener">Pay Fees</a>
+</div>
+
+<div class="page-banner">
+  <span class="eyebrow">Award Nomination</span>
+  <h1>Nomination Form</h1>
+  <p class="sub">Nominate yourself or a deserving individual for HRPCI membership or honorary recognition.</p>
+</div>
+
+<section>
+  <div class="container" style="max-width:820px;">
+    <div class="form-card reveal">
+      <form action="https://formsubmit.co/contact@hrpci.org" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New HRPCI Award Nomination">
+        <input type="hidden" name="_next" value="https://www.hrpci.org/thank-you.html">
+
+        <h3 style="color:var(--red); border-bottom:2px solid var(--line); padding-bottom:8px;">Applying For</h3>
+        <select name="Category" required>
+          <option value="">Select</option>
+          <option>HRPCI Membership</option>
+          <option>Honorary Doctorate Award</option>
+          <option>Lifetime Achievement Award</option>
+          <option>Odisha Gaurav Samman</option>
+        </select>
+
+        <h3 style="color:var(--red); border-bottom:2px solid var(--line); padding-bottom:8px; margin-top:30px;">Nominee Information</h3>
+        <div class="form-row">
+          <div>
+            <label>Full Name</label>
+            <input type="text" name="Full Name" required>
+          </div>
+          <div>
+            <label>Gender</label>
+            <select name="Gender">
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label>Date of Birth</label>
+            <input type="date" name="Date" required>
+          </div>
+          <div>
+            <label>Aadhar No.</label>
+            <input type="text" name="Number" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label>Email Address</label>
+            <input type="email" name="Email" required>
+          </div>
+          <div>
+            <label>Mobile Number</label>
+            <input type="tel" name="Phone" required>
+          </div>
+        </div>
+        <label>Address</label>
+        <textarea name="Address"></textarea>
+        <div class="form-row">
+          <div>
+            <label>Profession</label>
+            <input type="text" name="Profession">
+          </div>
+          <div>
+            <label>Organization</label>
+            <input type="text" name="Organization">
+          </div>
+        </div>
+
+        <h3 style="color:var(--red); border-bottom:2px solid var(--line); padding-bottom:8px; margin-top:30px;">Field of Achievement</h3>
+        <div class="checkbox-grid">
+          <label><input type="checkbox" name="Field" value="Social Work"> Social Work</label>
+          <label><input type="checkbox" name="Field" value="Education"> Education</label>
+          <label><input type="checkbox" name="Field" value="Healthcare"> Healthcare</label>
+          <label><input type="checkbox" name="Field" value="Human Rights"> Human Rights</label>
+          <label><input type="checkbox" name="Field" value="Business"> Business / Entrepreneurship</label>
+          <label><input type="checkbox" name="Field" value="Arts & Culture"> Arts &amp; Culture</label>
+          <label><input type="checkbox" name="Field" value="Public Service"> Public Service</label>
+        </div>
+
+        <h3 style="color:var(--red); border-bottom:2px solid var(--line); padding-bottom:8px; margin-top:30px;">Achievements</h3>
+        <label>Describe Major Achievements</label>
+        <textarea name="Achievements"></textarea>
+
+        <h3 style="color:var(--red); border-bottom:2px solid var(--line); padding-bottom:8px; margin-top:30px;">Upload Documents</h3>
+        <label>Upload CV / Resume</label>
+        <input type="file" name="CV">
+        <label>Aadhar / Voter ID</label>
+        <input type="file" name="ID_Proof">
+        <label>Upload Passport Size Photo</label>
+        <input type="file" name="Photo">
+
+        <button type="submit">Submit Nomination</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand"><img src="images/hrpci-logo.png" alt="HRPCI Logo"><span class="name">HRPCI</span></div>
+      <p>Human Rights Protection Council, India (HRPCI) is dedicated to promoting human rights, social justice, peace, education, and humanitarian values. We recognize individuals and institutions who contribute positively to society.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="honorary-doctorate.html">Honorary Doctorate</a></li>
+        <li><a href="verify.html">Verify Certificate</a></li>
+        <li><a href="policy.html">Policy</a></li>
+        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        <li><a href="refund.html">Refund Policy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Contact Info</h3>
+      <p><strong>Address:</strong><br>3rd Floor BMC Bhawani Mall,<br>Saheed Nagar, BBSR – 751007, Odisha</p>
+      <p><strong>Address:</strong><br>B1/638 A, 2nd Floor, Janakpuri,<br>New Delhi – 110058, India</p>
+      <p><strong>Phone:</strong> +91 7655086853<br><strong>Email:</strong> contact@hrpci.org</p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2025 Human Rights Protection Council, India (HRPCI). All Rights Reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
