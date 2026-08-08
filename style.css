@@ -221,7 +221,7 @@ section{padding:86px 0;}
 
 /* Pillar card (mission/vision/plan) — seal-topped */
 .pillar-card{
-  background:var(--navy); color:#fff; border-radius:10px; padding:34px 28px;
+  background:var(--red); color:#fff; border-radius:10px; padding:34px 28px;
   position:relative; overflow:hidden;
 }
 .pillar-card::before{
