@@ -162,8 +162,8 @@ ul{padding-left:1.3em;}
 .page-banner p.sub{color:#C9CEDA; max-width:560px; margin:0 auto; position:relative; z-index:1;}
 
 /* ================= SLIDESHOW ================= */
-.slideshow{position:relative; width:100%; height:110vh; min-height:340px; overflow:hidden;}
-.slide{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 1.2s ease;}
+.slideshow{position:relative; width:100%; height:64vh; min-height:340px; max-height:640px; overflow:hidden; background:var(--navy-deep);}
+.slide{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 22%; opacity:0; transition:opacity 1.2s ease;}
 .slide.active{opacity:1;}
 .slideshow::after{content:""; position:absolute; inset:0; background:linear-gradient(0deg, rgba(8,21,39,.75), rgba(8,21,39,.15));}
 .slideshow-caption{
@@ -171,6 +171,24 @@ ul{padding-left:1.3em;}
 }
 .slideshow-caption .eyebrow{background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.3); color:var(--gold-light);}
 .slideshow-caption h2{color:#fff; margin-top:10px;}
+
+/* Mobile portrait: shorter strip, keep faces/subjects in frame */
+@media (max-width:700px){
+  .slideshow{height:52vh; min-height:300px; max-height:460px;}
+  .slideshow-caption{bottom:22px;}
+  .slideshow-caption h2{font-size:22px;}
+}
+
+/* Mobile / short-viewport landscape: vh collapses here, so size off the
+   smaller dimension and let the image show fully (letterboxed) instead
+   of being cropped down to a sliver. */
+@media (max-height:500px) and (orientation:landscape){
+  .slideshow{height:88vh; min-height:220px; max-height:420px;}
+  .slide{object-fit:contain; background:var(--navy-deep);}
+  .slideshow-caption{bottom:10px;}
+  .slideshow-caption h2{font-size:18px; margin-top:4px;}
+  .slideshow-caption .eyebrow{padding:4px 10px; font-size:10px;}
+}
 
 /* ================= SECTIONS ================= */
 section{padding:86px 0;}
@@ -294,7 +312,7 @@ section{padding:86px 0;}
 .awardee-strip .section-head h2{color:#fff;}
 .awardee-strip .section-head p{color:#9AA3B5;}
 .awardee-logos{display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:46px;}
-.awardee-logos img{width:130px; height:130px; object-fit:cover; border-radius:50%; filter:grayscale(100%); opacity:.75; transition:.3s ease; border:2px solid rgba(201,162,39,.25);}
+.awardee-logos img{width:88px; height:88px; object-fit:cover; border-radius:50%; filter:grayscale(100%); opacity:.75; transition:.3s ease; border:2px solid rgba(201,162,39,.25);}
 .awardee-logos img:hover{filter:grayscale(0%); opacity:1; transform:scale(1.08); border-color:var(--gold);}
 
 /* ================= CTA STRIP ================= */
