@@ -388,7 +388,7 @@ button[type="submit"]:hover{background:var(--red-deep);}
 .centered-card-wrap{min-height:70vh; display:flex; align-items:center; justify-content:center; padding:130px 20px 60px;}
 .thanks-card{background:#fff; padding:46px 40px; max-width:480px; text-align:center; border-radius:12px; box-shadow:var(--shadow);}
 .thanks-card .seal-icon{margin:0 auto 18px;}
-.thanks-card p{color:var(--red);}
+.thanks-card p{color:var(--muted);}
 
 /* ================= FOOTER ================= */
 .site-footer{background:var(--navy-deep); color:#C9CEDA; padding:64px 0 0; font-size:14px;}
