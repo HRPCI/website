@@ -312,7 +312,7 @@ section{padding:86px 0;}
 .awardee-strip .section-head h2{color:#fff;}
 .awardee-strip .section-head p{color:#9AA3B5;}
 .awardee-logos{display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:46px;}
-.awardee-logos img{width:88px; height:88px; object-fit:cover; border-radius:50%; filter:grayscale(100%); opacity:.75; transition:.3s ease; border:2px solid rgba(201,162,39,.25);}
+.awardee-logos img{width:130px; height:130px; object-fit:cover; border-radius:50%; filter:grayscale(100%); opacity:.75; transition:.3s ease; border:2px solid rgba(201,162,39,.25);}
 .awardee-logos img:hover{filter:grayscale(0%); opacity:1; transform:scale(1.08); border-color:var(--gold);}
 
 /* ================= CTA STRIP ================= */
