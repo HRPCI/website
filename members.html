@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Members &mdash; HRPCI | Human Rights Protection Council, India</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Meet the members, office bearers and district leadership of Human Rights Protection Council, India (HRPCI).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Source+Sans+3:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#140D0C;
+    --maroon:#7A1315;
+    --maroon-deep:#530C0E;
+    --maroon-bright:#A61E1E;
+    --gold:#C6A15B;
+    --gold-bright:#E4C766;
+    --cream:#F6EFE2;
+    --paper:#FBF8F1;
+    --text:#241A16;
+    --text-soft:#5B4B44;
+    --line:rgba(36,26,22,.12);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Source Sans 3', sans-serif; color:var(--text); background:var(--paper); line-height:1.6; -webkit-font-smoothing:antialiased;}
+  img{max-width:100%; display:block;}
+  a{text-decoration:none; color:inherit;}
+  h1,h2,h3{font-family:'Fraunces', serif; font-weight:700; letter-spacing:-.01em; color:var(--ink);}
+  .container{max-width:1180px; margin:0 auto; padding:0 28px;}
+
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:10px; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase;
+    font-weight:700; color:var(--maroon); border:1px solid var(--line); border-radius:999px; padding:7px 16px 7px 10px; background:var(--cream);
+  }
+  .eyebrow::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--maroon); flex:none; box-shadow:0 0 0 3px rgba(122,19,21,.16);}
+
+  /* header */
+  .site-header{position:sticky; top:0; z-index:50; background:rgba(251,248,241,.88); backdrop-filter:blur(10px); border-bottom:1px solid var(--line);}
+  .nav-container{max-width:1180px; margin:0 auto; padding:14px 28px; display:flex; align-items:center; justify-content:space-between;}
+  .logo{display:flex; align-items:center; gap:12px;}
+  .seal-mark{width:44px; height:44px; border-radius:50%; flex:none; background:conic-gradient(from 220deg, var(--maroon), var(--maroon-deep), var(--gold), var(--maroon)); display:flex; align-items:center; justify-content:center; box-shadow:0 3px 10px rgba(83,12,14,.35);}
+  .seal-mark span{width:34px; height:34px; border-radius:50%; background:var(--paper); display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-weight:700; font-size:.85rem; color:var(--maroon); border:1px solid var(--gold);}
+  .logo-text{display:flex; flex-direction:column; line-height:1.15;}
+  .logo-text .full{font-family:'Fraunces',serif; font-weight:700; font-size:.98rem; color:var(--ink);}
+  .logo-text .sub{font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--maroon); font-weight:600;}
+  .nav-links{display:flex; align-items:center; gap:30px;}
+  .nav-links a{font-size:.92rem; font-weight:600; color:var(--text-soft); position:relative; padding:4px 0;}
+  .nav-links a:hover, .nav-links a.active{color:var(--maroon);}
+  .nav-links a.active::after{content:""; position:absolute; left:0; right:0; bottom:-6px; height:2px; background:var(--maroon);}
+
+
+  /* page header banner */
+  .page-hero{
+    position:relative; overflow:hidden; padding:80px 0 130px; text-align:center;
+    background:
+      radial-gradient(1100px 500px at 85% -10%, rgba(198,161,91,.18), transparent 60%),
+      radial-gradient(900px 500px at 10% 110%, rgba(166,30,30,.35), transparent 60%),
+      linear-gradient(160deg, #1B0F0E 0%, var(--ink) 55%, #1B0F0E 100%);
+  }
+  .page-hero::before{
+    content:""; position:absolute; inset:0; opacity:.06; pointer-events:none;
+    background-image:repeating-linear-gradient(45deg, var(--gold) 0 1px, transparent 1px 34px), repeating-linear-gradient(-45deg, var(--gold) 0 1px, transparent 1px 34px);
+  }
+  .page-hero .eyebrow{background:rgba(255,255,255,.06); border-color:rgba(228,199,102,.35); color:var(--gold-bright); position:relative; z-index:2;}
+  .page-hero .eyebrow::before{background:var(--gold-bright); box-shadow:0 0 0 3px rgba(228,199,102,.18);}
+  .page-hero h1{color:#F7F1E4; font-size:clamp(2rem, 4vw, 3rem); margin:22px auto 16px; max-width:680px; position:relative; z-index:2;}
+  .page-hero p{color:#D9CBC3; max-width:560px; margin:0 auto; font-size:1.02rem; position:relative; z-index:2;}
+
+  /* section */
+  section{padding:100px 0;}
+  .section-cream{background:var(--cream);}
+
+  /* ---------- filter tabs (edit group names / add more as needed) ---------- */
+  .member-filters{
+    display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin:-96px auto 60px; position:relative; z-index:5;
+  }
+  .member-filters button{
+    font-family:'Source Sans 3', sans-serif; font-weight:700; font-size:.85rem; letter-spacing:.02em;
+    padding:11px 22px; border-radius:999px; border:1px solid var(--line); background:var(--paper); color:var(--text-soft);
+    cursor:pointer; transition:all .18s ease; box-shadow:0 10px 24px -14px rgba(20,13,12,.3);
+  }
+  .member-filters button.active, .member-filters button:hover{background:var(--maroon); color:#fff; border-color:var(--maroon);}
+
+  /* ---------- search bar ---------- */
+  .member-search{
+    max-width:520px; margin:0 auto 30px; position:relative; z-index:5;
+  }
+  .member-search form{
+    display:flex; align-items:center; gap:8px;
+    background:var(--paper); border:1px solid var(--line); border-radius:999px;
+    padding:6px 6px 6px 20px; box-shadow:0 14px 30px -18px rgba(20,13,12,.35);
+  }
+  .member-search svg{flex:none; color:var(--text-soft);}
+  .member-search input{
+    flex:1; border:none; outline:none; background:none; font-family:'Source Sans 3', sans-serif;
+    font-size:.95rem; color:var(--text); padding:10px 0;
+  }
+  .member-search input::placeholder{color:#A6968D;}
+  .member-search button{
+    flex:none; background:var(--maroon); color:#fff; border:none; border-radius:999px;
+    padding:11px 22px; font-weight:700; font-size:.85rem; cursor:pointer; transition:background .18s ease;
+  }
+  .member-search button:hover{background:var(--maroon-bright);}
+  .search-empty{
+    display:none; text-align:center; color:var(--text-soft); font-size:.95rem;
+    padding:40px 20px; grid-column:1/-1;
+  }
+  .search-empty.show{display:block;}
+
+  /* ---------- member cards ---------- */
+  .member-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:26px;}
+  .member-card{
+    background:var(--paper); border:1px solid var(--line); border-radius:16px; overflow:hidden; text-align:center;
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .member-card:hover{transform:translateY(-6px); box-shadow:0 24px 46px -26px rgba(20,13,12,.35);}
+  .member-photo{
+    position:relative; aspect-ratio:1/1; overflow:hidden; background:var(--cream);
+  }
+  .member-photo img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease;}
+  .member-card:hover .member-photo img{transform:scale(1.06);}
+  .member-photo::after{
+    content:""; position:absolute; inset:0; box-shadow:inset 0 -50px 40px -30px rgba(20,13,12,.35);
+  }
+  .member-body{padding:22px 18px 26px;}
+  .member-body h3{font-size:1.05rem; margin-bottom:4px;}
+  .member-role{
+    display:inline-block; font-size:.72rem; letter-spacing:.09em; text-transform:uppercase; font-weight:700;
+    color:var(--maroon); background:var(--cream); border:1px solid var(--line); border-radius:999px; padding:5px 14px; margin-top:6px;
+  }
+  .member-loc{font-size:.85rem; color:var(--text-soft); margin-top:10px;}
+
+  /* ---------- office bearers strip (leadership highlight) ---------- */
+  .lead-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
+  .lead-card{
+    position:relative; background:linear-gradient(165deg, var(--maroon) 0%, var(--maroon-deep) 100%);
+    border-radius:16px; padding:36px 28px; text-align:center; color:#F3E4D8; overflow:hidden;
+    box-shadow:0 18px 40px -20px rgba(83,12,14,.55);
+  }
+  .lead-card::after{content:""; position:absolute; right:-30px; top:-30px; width:120px; height:120px; border-radius:50%; border:1px solid rgba(228,199,102,.28);}
+  .lead-photo{
+    width:104px; height:104px; border-radius:50%; margin:0 auto 18px; overflow:hidden;
+    border:3px solid var(--gold-bright); box-shadow:0 0 0 6px rgba(228,199,102,.14);
+  }
+  .lead-photo img{width:100%; height:100%; object-fit:cover;}
+  .lead-card h3{color:#fff; font-size:1.15rem; margin-bottom:6px;}
+  .lead-card .member-role{background:rgba(255,255,255,.1); border-color:rgba(228,199,102,.35); color:var(--gold-bright);}
+
+  /* ---------- CTA ---------- */
+  .cta-strip{
+    text-align:center; padding:110px 28px;
+    background:radial-gradient(700px 300px at 50% 0%, rgba(198,161,91,.15), transparent 60%), var(--maroon-deep);
+    color:#fff;
+  }
+  .cta-strip h2{color:#fff; font-size:clamp(1.8rem,3.4vw,2.6rem); margin-bottom:14px;}
+  .cta-strip p{color:#E9D3C7; max-width:520px; margin:0 auto 32px; font-size:1.02rem;}
+  .btn{display:inline-flex; align-items:center; gap:8px; padding:15px 30px; border-radius:6px; font-weight:700; font-size:.95rem; letter-spacing:.01em; transition:all .18s ease; border:1px solid transparent;}
+  .btn-gold{background:linear-gradient(135deg, var(--gold-bright), var(--gold)); color:var(--ink); box-shadow:0 10px 24px rgba(198,161,91,.4);}
+  .btn-gold:hover{transform:translateY(-2px);}
+
+  /* footer */
+  .site-footer{background:var(--ink); color:#C9BBB2; padding:70px 0 0;}
+  .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1.2fr; gap:50px; padding-bottom:50px; border-bottom:1px solid rgba(255,255,255,.08);}
+  .footer-brand{display:flex; align-items:center; gap:12px; margin-bottom:16px;}
+  .footer-brand .name{font-family:'Fraunces',serif; font-weight:700; font-size:1.15rem; color:#F6EFE2;}
+  .footer-col h3{color:#F6EFE2; font-family:'Fraunces',serif; font-size:1rem; margin-bottom:18px; letter-spacing:.02em;}
+  .footer-col p{font-size:.92rem; line-height:1.7;}
+  .footer-col ul{list-style:none;}
+  .footer-col ul li{margin-bottom:10px;}
+  .footer-col ul a{font-size:.92rem; color:#C9BBB2; transition:color .15s ease;}
+  .footer-col ul a:hover{color:var(--gold-bright);}
+  .footer-bottom{text-align:center; padding:26px 0; font-size:.82rem; color:#8B7D75;}
+
+  .reveal{opacity:0; transform:translateY(22px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){ .reveal{opacity:1; transform:none; transition:none;} html{scroll-behavior:auto;} }
+
+  @media (max-width:980px){
+    .nav-links{display:none;}
+    .menu-toggle{display:block;}
+    .member-grid{grid-template-columns:repeat(2,1fr);}
+    .lead-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr; gap:34px;}
+  }
+  @media (max-width:520px){
+    .member-grid{grid-template-columns:1fr 1fr;}
+    section{padding:70px 0;}
+  }
+</style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nomination Form | Human Rights Protection Council, India</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Submit a nomination for HRPCI membership, Lifetime Achievement or other honorary recognitions.">
+<link rel="icon" href="images/hrpci-logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="images/hrpci-logo.png" alt="HRPCI Logo">
+      <span class="logo-text"><span class="full">Human Rights Protection Council, India</span><span class="sub">HRPCI &middot; SOCIAL ORGANIZATION</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="awards.html">Awards</a>
+      <a href="verify.html">Verify</a>
+      <a href="contact.html">Contact</a>
+      <a class="pay-btn" href="https://pages.razorpay.com/hrpci" target="_blank" rel="noopener">Pay Fees</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Close menu">✕</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="awards.html">Awards</a>
+  <a href="verify.html">Verify Certificate</a>
+  <a href="contact.html">Contact</a>
+  <a href="nomination.html">Nomination</a>
+  <a href="https://pages.razorpay.com/hrpci" class="pay-btn" target="_blank" rel="noopener">Pay Fees</a>
+</div>
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <span class="eyebrow">HRPCI Family</span>
+  <h1>Our Members &amp; Office Bearers</h1>
+  <p>The people who carry HRPCI's mission forward &mdash; across states, districts and communities.</p>
+</section>
+
+<!-- ============================================================
+     NATIONAL OFFICE BEARERS
+     To add a member: copy one .lead-card block and edit the
+     photo path, name, and designation.
+     ============================================================ -->
+<section class="section-cream" style="padding-top:0;">
+  <div class="container">
+    <div class="member-search reveal">
+      <form id="memberSearchForm" onsubmit="return false;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="memberSearchInput" placeholder="Search by
+ member name or ID&hellip;">
+        <button type="submit" id="memberSearchBtn">Search</button>
+      </form>
+    </div>
+</section>
+
+    <div class="member-filters reveal">
+      <button class="active" data-filter="all">All Members</button>
+      <button data-filter="national">National Office</button>
+      <button data-filter="state">State Units</button>
+      <button data-filter="district">District Units</button>
+    </div>
+
+    <div class="section-head reveal" style="max-width:640px; margin:0 auto 44px; text-align:center;">
+      <span class="eyebrow">Leadership</span>
+      <h2 style="font-size:clamp(1.6rem,2.6vw,2.1rem); margin:16px 0 0;">National Office Bearers</h2>
+    </div>
+
+    <div class="lead-grid reveal">
+
+      <!-- LEAD CARD 1 — edit photo / name / designation -->
+      <div class="lead-card">
+        <div class="lead-photo">
+          <img src="images/members/president.jpg" alt="President name"
+               onerror="this.src='https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=300&q=60'">
+        </div>
+        <h3>Full Name Here</h3>
+        <span class="member-role">National President</span>
+      </div>
+
+      <!-- LEAD CARD 2 -->
+      <div class="lead-card">
+        <div class="lead-photo">
+          <img src="images/members/secretary.jpg" alt="Durga Madhab Ray">
+        </div>
+        <h3>Durga Madhab Ray</h3>
+        <span class="member-role">Secretary</span>
+      </div>
+
+      <!-- LEAD CARD 3 -->
+      <div class="lead-card">
+        <div class="lead-photo">
+          <img src="images/members/treasurer.jpg" alt="Treasurer name"
+               onerror="this.src='https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=60'">
+        </div>
+        <h3>Full Name Here</h3>
+        <span class="member-role">Treasurer</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ALL MEMBERS GRID
+     To add a member: copy one .member-card block inside
+     .member-grid and edit the image path, name, designation,
+     and location. Set data-group to "national", "state" or
+     "district" so the filter buttons above work correctly.
+     ============================================================ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal" style="max-width:640px; margin:0 auto 44px; text-align:center;">
+      <span class="eyebrow">Directory</span>
+      <h2 style="font-size:clamp(1.6rem,2.6vw,2.1rem); margin:16px 0 0;">All Members</h2>
+    </div>
+
+    <div class="member-grid reveal" id="memberGrid">
+
+      <p class="search-empty" id="searchEmpty">No member found with that name or ID. Please check the spelling and try again.</p>
+
+      <!-- MEMBER CARD — copy this block for each new member -->
+      <div class="member-card" data-group="national" data-id="HRPCI-0001">
+        <div class="member-photo">
+          <img src="images/members/narayan-pati.jpg" alt="Narayan Pati">
+        </div>
+        <div class="member-body">
+          <h3>Dr. Narayan Pati</h3>
+          <span class="member-role">State President</span>
+          <p class="member-loc">Odisha</p>
+        </div>
+      </div>
+
+      <div class="member-card" data-group="state" data-id="HRPCI-0002">
+        <div class="member-photo">
+          <img src="images/members/member2.jpg" alt="Member name"
+               onerror="this.src='https://images.unsplash.com/photo-1590086782957-93c06ef21604?auto=format&fit=crop&w=400&q=60'">
+        </div>
+        <div class="member-body">
+          <h3>Full Name</h3>
+          <span class="member-role">Designation</span>
+          <p class="member-loc">City / State</p>
+        </div>
+      </div>
+
+      <div class="member-card" data-group="state" data-id="HRPCI-0003">
+        <div class="member-photo">
+          <img src="images/members/member3.jpg" alt="Member name"
+               onerror="this.src='https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=60'">
+        </div>
+        <div class="member-body">
+          <h3>Full Name</h3>
+          <span class="member-role">Designation</span>
+          <p class="member-loc">City / State</p>
+        </div>
+      </div>
+
+      <div class="member-card" data-group="district" data-id="HRPCI-0004">
+        <div class="member-photo">
+          <img src="images/members/member4.jpg" alt="Member name"
+               onerror="this.src='https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&w=400&q=60'">
+        </div>
+        <div class="member-body">
+          <h3>Member Name</h3>
+          <span class="member-role">Designation</span>
+          <p class="member-loc">City/State</p>
+        </div>
+      </div>
+
+      <div class="member-card" data-group="district" data-id="HRPCI-0005">
+        <div class="member-photo">
+          <img src="images/members/manoj-kumar-ojha.jpg" alt="Manoj Kumar Ojha">
+        </div>
+        <div class="member-body">
+          <h3>Manoj Kumar Ojha</h3>
+          <span class="member-role">District Vice President</span>
+          <p class="member-loc">Khurdha, Odisha</p>
+        </div>
+      </div>
+
+      <div class="member-card" data-group="district" data-id="HRPCI-0006">
+        <div class="member-photo">
+          <img src="images/members/member6.jpg" alt="Member name"
+               onerror="this.src='https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=60'">
+        </div>
+        <div class="member-body">
+          <h3>Full Name</h3>
+          <span class="member-role">Designation</span>
+          <p class="member-loc">City / State</p>
+        </div>
+      </div>
+
+      <div class="member-card" data-group="national" data-id="HRPCI-0007">
+        <div class="member-photo">
+          <img src="images/members/member7.jpg" alt="Member name"
+               onerror="this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=60'">
+        </div>
+        <div class="member-body">
+          <h3>Full Name</h3>
+          <span class="member-role">Designation</span>
+          <p class="member-loc">City / State</p>
+        </div>
+      </div>
+
+      <div class="member-card" data-group="state" data-id="HRPCI-0008">
+        <div class="member-photo">
+          <img src="images/members/member8.jpg" alt="Member name"
+               onerror="this.src='https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=400&q=60'">
+        </div>
+        <div class="member-body">
+          <h3>Full Name</h3>
+          <span class="member-role">Designation</span>
+          <p class="member-loc">City / State</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <h2>Want to join the council?</h2>
+  <p>Become a registered member of HRPCI and take part in national human rights and social welfare initiatives.</p>
+  <a href="nomination.html" class="btn btn-gold">Apply for Membership</a>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <span class="seal-mark"><span>HR</span></span>
+        <span class="name">HRPCI</span>
+      </div>
+      <p>Human Rights Protection Council, India (HRPCI) is dedicated to promoting human rights, social justice, peace, education, and humanitarian values. We recognize individuals and institutions who contribute positively to society.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="verify.html">Verify Certificate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Contact Info</h3>
+      <p><strong>Address:</strong> 3rd Floor BMC Bhawani Mall, Saheed Nagar, BBSR &ndash; 751007, Odisha</p>
+      <p style="margin-top:10px;"><strong>Address:</strong> B1/638 A, 2nd Floor, Janakpuri, New Delhi &ndash; 110058, India</p>
+      <p style="margin-top:10px;"><strong>Phone:</strong> +91 7655086853<br><strong>Email:</strong> contact@hrpci.org</p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2025 Human Rights Protection Council, India (HRPCI). All Rights Reserved.</div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuClose = document.getElementById('menuClose');
+  menuToggle && menuToggle.addEventListener('click', () => mobileMenu.classList.add('open'));
+  menuClose && menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  mobileMenu && mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // filter buttons + search combined
+  const filterBtns = document.querySelectorAll('.member-filters button');
+  const memberCards = document.querySelectorAll('#memberGrid .member-card');
+  const searchInput = document.getElementById('memberSearchInput');
+  const searchForm = document.getElementById('memberSearchForm');
+  const searchEmpty = document.getElementById('searchEmpty');
+  let activeFilter = 'all';
+
+  function applyFilters(){
+    const term = searchInput.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    memberCards.forEach(card => {
+      const name = (card.querySelector('h3')?.textContent || '').toLowerCase();
+      const id = (card.dataset.id || '').toLowerCase();
+      const matchesGroup = (activeFilter === 'all' || card.dataset.group === activeFilter);
+      const matchesSearch = (term === '' || name.includes(term) || id.includes(term));
+      const show = matchesGroup && matchesSearch;
+      card.style.display = show ? '' : 'none';
+      if (show) visibleCount++;
+    });
+
+    searchEmpty.classList.toggle('show', visibleCount === 0);
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeFilter = btn.dataset.filter;
+      applyFilters();
+    });
+  });
+
+  searchForm.addEventListener('submit', (e) => { e.preventDefault(); applyFilters(); });
+  searchInput.addEventListener('input', applyFilters);
+</script>
+</body>
+</html>
