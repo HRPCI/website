@@ -261,9 +261,9 @@
 
     <div class="member-filters reveal">
       <button class="active" data-filter="all">All Members</button>
-      <button data-filter="national">National Office</button>
       <button data-filter="state">State Units</button>
       <button data-filter="district">District Units</button>
+      <button data-filter="volunteer">Member/Volunteer</button>
     </div>
 
     <div class="section-head reveal" style="max-width:640px; margin:0 auto 44px; text-align:center;">
@@ -286,7 +286,8 @@
       <!-- LEAD CARD 2 -->
       <div class="lead-card">
         <div class="lead-photo">
-          <img src="images/members/secretary.jpg" alt="Durga Madhab Ray">
+          <img src="images/members/secretary.jpg" alt="Durga Madhab Ray"
+>
         </div>
         <h3>Durga Madhab Ray</h3>
         <span class="member-role">Secretary</span>
@@ -310,8 +311,8 @@
      ALL MEMBERS GRID
      To add a member: copy one .member-card block inside
      .member-grid and edit the image path, name, designation,
-     and location. Set data-group to "national", "state" or
-     "district" so the filter buttons above work correctly.
+     and location. Set data-group to "national", "state",
+     "district" or "volunteer" so the filter buttons above work correctly.
      ============================================================ -->
 <section>
   <div class="container">
@@ -325,7 +326,7 @@
       <p class="search-empty" id="searchEmpty">No member found with that name or ID. Please check the spelling and try again.</p>
 
       <!-- MEMBER CARD — copy this block for each new member -->
-      <div class="member-card" data-group="national" data-id="HRPCI-0001">
+      <div class="member-card" data-group="state" data-id="HRPCI-0001">
         <div class="member-photo">
           <img src="images/members/narayan-pati.jpg" alt="Narayan Pati">
         </div>
@@ -338,13 +339,12 @@
 
       <div class="member-card" data-group="state" data-id="HRPCI-0002">
         <div class="member-photo">
-          <img src="images/members/member2.jpg" alt="Member name"
-               onerror="this.src='https://images.unsplash.com/photo-1590086782957-93c06ef21604?auto=format&fit=crop&w=400&q=60'">
+          <img src="images/members/yashobanta-samantaray.jpg" alt="Yashobanta Samantaray">
         </div>
         <div class="member-body">
-          <h3>Full Name</h3>
-          <span class="member-role">Designation</span>
-          <p class="member-loc">City / State</p>
+          <h3>Yashobanta Samantaray</h3>
+          <span class="member-role">State Secretary</span>
+          <p class="member-loc">Odisha</p>
         </div>
       </div>
 
@@ -395,7 +395,7 @@
         </div>
       </div>
 
-      <div class="member-card" data-group="national" data-id="HRPCI-0007">
+      <div class="member-card" data-group="volunteer" data-id="HRPCI-0007">
         <div class="member-photo">
           <img src="images/members/member7.jpg" alt="Member name"
                onerror="this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=60'">
