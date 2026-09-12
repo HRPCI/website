@@ -11,6 +11,7 @@ Modern, static website for **Human Rights Protection Council, India (HRPCI)**. P
 ├── awards.html
 ├── honorary-doctorate.html
 ├── verify.html
+├── members.html
 ├── nomination.html
 ├── thank-you.html
 ├── contact.html
